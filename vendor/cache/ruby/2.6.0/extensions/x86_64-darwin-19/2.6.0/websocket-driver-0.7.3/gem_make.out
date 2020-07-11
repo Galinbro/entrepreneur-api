@@ -1,0 +1,15 @@
+current directory: /Users/galindo/rails_projects_2020/rails_6_projects/entrepreneur-api/vendor/cache/ruby/2.6.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+/Users/galindo/.rvm/rubies/ruby-2.6.6/bin/ruby -I /Users/galindo/.rvm/rubies/ruby-2.6.6/lib/ruby/site_ruby/2.6.0 -r ./siteconf20200711-14066-gjaysy.rb extconf.rb
+creating Makefile
+
+current directory: /Users/galindo/rails_projects_2020/rails_6_projects/entrepreneur-api/vendor/cache/ruby/2.6.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /Users/galindo/rails_projects_2020/rails_6_projects/entrepreneur-api/vendor/cache/ruby/2.6.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+
+current directory: /Users/galindo/rails_projects_2020/rails_6_projects/entrepreneur-api/vendor/cache/ruby/2.6.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 websocket_mask.bundle ./.gem.20200711-14066-1eecy7n
