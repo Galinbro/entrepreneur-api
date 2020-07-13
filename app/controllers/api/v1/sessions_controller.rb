@@ -1,6 +1,10 @@
 class Api::V1::SessionsController < Devise::SessionsController
   respond_to :json
 
+  def new
+    render json: {:status=> :ok, data: resource.as_json(only: [:id, :jti])}
+  end
+  
   private
   def respond_with(resource, _opts = {})
     if resource[:id]

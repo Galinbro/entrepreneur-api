@@ -12,9 +12,16 @@ class Users::ConfirmationsController < Devise::ConfirmationsController
   # end
 
   # GET /resource/confirmation?confirmation_token=abcdef
-  # def show
-  #   super
-  # end
+  def show
+    self.resource = User.confirm_by_token(params[:confirmation_token])
+    if resource.errors.empty?
+      render json: {:status=> :ok, data: resource}
+      #render file: 'v1/custom_devise/sessions/create', locals: { current_user: resource}
+    else
+      render json: {:status=> :unprocessable_entity, data: resource.errors.full_messages}
+      #render file: "#{Rails.root}/public/422.json", status: :unprocessable_entity, locals: { errors: resource.errors.full_messages }
+    end
+  end
 
   # protected
 
